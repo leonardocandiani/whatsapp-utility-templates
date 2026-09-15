@@ -9,3 +9,6 @@ venv/
 .DS_Store
 
 README.md.bak
+
+# dumps brutos das WABAs (dado real, fica fora do git)
+_temp/
