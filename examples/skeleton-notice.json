@@ -1,0 +1,29 @@
+{
+  "name": "utility_notice_v1",
+  "language": "pt_BR",
+  "category": "UTILITY",
+  "allow_category_change": false,
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Olá, {{1}}, tudo bem? Aqui é {{2}}, da nossa equipe, sobre o seu atendimento em aberto. {{3}}. Qualquer dúvida, é só responder por aqui.",
+      "example": {
+        "body_text": [
+          [
+            "Casey",
+            "Jamie",
+            "Registramos a atualização do protocolo de atendimento 55021 e o cadastro segue em análise"
+          ]
+        ]
+      }
+    },
+    { "type": "FOOTER", "text": "Suporte" },
+    {
+      "type": "BUTTONS",
+      "buttons": [
+        { "type": "QUICK_REPLY", "text": "Entendi" },
+        { "type": "QUICK_REPLY", "text": "Tenho uma dúvida" }
+      ]
+    }
+  ]
+}

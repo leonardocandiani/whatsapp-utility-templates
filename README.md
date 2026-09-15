@@ -76,7 +76,7 @@ This repository distills what was measured on a real WABA in September 2026: 33 
 | `scripts/submit.py` | Runs the checker and, only if it passes, submits the definition to a WABA |
 | `scripts/status.py` | Reads the live status and category of a template by name |
 | `scripts/preflight.py` | Fail-closed check before a send: exits 0 only on live `APPROVED` + `UTILITY`; `--all` scans the whole WABA for reclassifications |
-| `examples/skeleton-return.json`, `examples/case-progress.json`, `examples/appointment-reminder.json`, `examples/media-notice.json` | Complete definitions in the submit format that pass the checker (the last one is an image-header notice, allowed since the September 15 revision when the body is clean and the button acknowledges) |
+| `examples/*.json` | Four versatile skeletons that pass the checker: return (`skeleton-return`), notice (`skeleton-notice`), objective question (`skeleton-question`) and image-header notice (`media-notice`). Every one is approved once and then carries any message through its wide slot: what is fixed is the protocol-style anchor and the closing, what changes is the sentence you write at send time. A definition that only serves one case does not belong here |
 
 ## Install
 

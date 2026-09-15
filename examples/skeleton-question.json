@@ -1,0 +1,29 @@
+{
+  "name": "utility_question_v1",
+  "language": "pt_BR",
+  "category": "UTILITY",
+  "allow_category_change": false,
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Oi, {{1}}, tudo bem? {{2}} aqui, da nossa equipe, sobre o seu atendimento em aberto. {{3}}? Pode responder por aqui.",
+      "example": {
+        "body_text": [
+          [
+            "Morgan",
+            "Jamie",
+            "Você confirma o endereço informado na solicitação de atendimento 61840"
+          ]
+        ]
+      }
+    },
+    { "type": "FOOTER", "text": "Suporte" },
+    {
+      "type": "BUTTONS",
+      "buttons": [
+        { "type": "QUICK_REPLY", "text": "Sim" },
+        { "type": "QUICK_REPLY", "text": "Não" }
+      ]
+    }
+  ]
+}
