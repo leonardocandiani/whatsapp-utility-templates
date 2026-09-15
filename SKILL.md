@@ -80,11 +80,12 @@ the specific content enters through the slot.
    rejects anything longer). See `references/button-pairs.md` for the full
    accept/decline contract.
 
-What stays out, always: emoji in the body, a `HEADER` component, and any
-money value. No approved UTILITY template in the corpus used an emoji or a
-text header in the main body; the few with an image or video header belong
-to a different template family (a media notice) that isn't the pattern this
-skill teaches. A currency value shows up only in one old billing template,
+What stays out, always: emoji in the body, a text `HEADER`, and any money
+value. No approved UTILITY template in the corpus used an emoji or a text
+header in the main body. **An image or video header is different: it can
+pass, but only inside the media notice family, and only with an
+acknowledgement button** (section 8 covers the rule and the measurement
+behind it). A currency value shows up only in one old billing template,
 documented as a historical exception, not a model to copy: price stays out
 of the template, always inside the live conversation, where it can be
 verified against a real calculation.
@@ -323,6 +324,15 @@ per-reader preview rejects, the batch path also rejects.
 Anyone who replies to a template reopens the 24 hour window, and the
 conversation continues free from there.
 
+**Fail-closed preflight before every send.** Never trust that "it approved
+once" still holds. Run `scripts/preflight.py <name>` before sending: it
+checks the live category on Meta (one hour cache, `--fresh` forces a new
+check) and only exits 0 with `APPROVED` + `UTILITY`. A network error,
+`PAUSED`, `REJECTED`, or a reclassification to `MARKETING` all block,
+always, never "let it through to be safe". Run `scripts/preflight.py --all`
+on a daily cron to catch a reclassification before anyone tries to send
+anything. Full contract in `references/send-preflight.md`.
+
 ## 7. Gallery of real examples, paired with the reason
 
 See `references/approved-pattern.md` for the full catalog.
@@ -348,13 +358,52 @@ same sender can become UTILITY or MARKETING depending on just one thing,
 whether the sentence starts from something the reader already has or
 invites them into something they haven't asked for.
 
-## 8. Buttons
+## 8. Gallery (105 templates, three WABAs, measured September 2026)
+
+`references/gallery.md` walks through the full gallery from three real
+WABAs belonging to the same company, with the body, buttons, and whatever
+real send data was available per family. The strongest findings:
+
+- **The button decides category even on a media template.** The six
+  "Important notice" templates share an identical body; the one that stayed
+  UTILITY uses "Notify me", the five reclassified to MARKETING use "Want to
+  know more" or "Talk to an advisor". The button rule is not just for plain
+  text: `check.py` (September 15 revision) passes an `IMAGE`/`VIDEO` header
+  when the body is clean and every button is an acknowledgement or a
+  decline, and still rejects a text header every time.
+- **"Block this number" is the single most used button in the whole
+  corpus**, present in UTILITY-approved templates on all three WABAs. It
+  confirms numerically why `references/button-pairs.md` argues against it:
+  the button helps approval, but the click usually is not wired to
+  anything, and old revisions carrying it stay live in the catalog.
+- **None of the 105 templates carries a `quality_score` other than
+  `UNKNOWN`.** There is no way, in this capture, to cross quality score
+  against category.
+- **Almost half the templates (roughly 57 of 105) are an identical revision
+  of a body that already exists**, not new content: three distinct texts
+  account for 30 of the 51 templates on the research WABA alone.
+- **Only 7 of the 105 templates (6.7%) have any measured send.** Six come
+  from the company's own delivery log (Meta's own analytics endpoint
+  returns zero for that WABA); the seventh is a template outside this
+  company's domain. This gallery describes approved anatomy, not campaign
+  performance.
+- **Reading more does not mean replying more**: the template with the best
+  read rate (92.9%) replies worse (40.5%) than the one with the best reply
+  rate (60.1%, 87.6% read).
+- **The case and skeleton anatomies replicate word for word between two
+  WABAs**, confirming that submitting per-WABA (section 6) is standard
+  practice, not a hypothesis.
+- **The currency exception stays isolated to one template** across both
+  WABAs where it exists, always `APPROVED`/`UTILITY`. No new template
+  repeats it.
+
+## 9. Buttons
 
 See `references/button-pairs.md` for the full accept/decline contract: label
 rules, the words that sink a button, and the payload contract so a click
 routes by index instead of by label text.
 
-## 9. Scripts
+## 10. Scripts
 
 `scripts/check.py definition.json` rejects a definition that tends to become
 MARKETING (exit 1 with the reasons) and `scripts/check.py --corpus` reruns

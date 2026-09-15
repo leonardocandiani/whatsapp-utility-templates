@@ -58,7 +58,7 @@ A skill for Claude Code (and any other agent that reads a `SKILL.md`) that teach
 
 Outside the 24 hour window, only an approved template can open a conversation on WhatsApp. UTILITY templates are cheaper than MARKETING and need no marketing opt-in, but Meta reclassifies an approved UTILITY template to MARKETING the moment the text, the slot examples or the button labels read like a sales pitch. When that happens the name is burned, the template does not come back, and the WABA carries the history.
 
-This repository distills what was measured on a real WABA in September 2026: 33 templates approved and rejected, one batch of four reclassified in 25 minutes, and the three skeletons that were approved right after and never moved. The rules are calibrated against a 16 template corpus, and `scripts/check.py --corpus` reproduces all 16 verdicts.
+This repository distills what was measured on a real WABA in September 2026: 33 templates approved and rejected, one batch of four reclassified in 25 minutes, and the three skeletons that were approved right after and never moved. The rules are calibrated against a 16 template corpus, and `scripts/check.py --corpus` reproduces all 16 verdicts. `references/gallery.md` widens the lens to 105 templates across three real WABAs from the same company, and `scripts/check_gallery.py` scores the checker against that wider set honestly (67 of 101 verdicts match outside the calibration set).
 
 ## What is inside
 
@@ -68,10 +68,15 @@ This repository distills what was measured on a real WABA in September 2026: 33 
 | `references/approved-pattern.md` | The anonymized catalog of real templates, approved and rejected, each paired with the reason |
 | `references/button-pairs.md` | Exactly two quick-reply buttons, one accept and one decline that answer the skeleton's own question, plus the payload contract so the click lands somewhere |
 | `references/measured-corpus.json` | The 16 template corpus the checker is calibrated on |
+| `references/gallery.md` | The full gallery from three real WABAs (105 templates), with the real send data that was available per family |
+| `references/gallery-corpus.json` | The 101 template corpus (deduplicated) the gallery is built from, run through `check_gallery.py` for an honest score outside the calibration set |
 | `scripts/check.py` | Rejects a definition that tends to become MARKETING (exit 1 with reasons); `--corpus` reruns the calibration; `--lang pt|en` picks the word list |
+| `scripts/check_gallery.py` | Runs the checker against the full gallery corpus and reports the real hit rate, not the calibrated one |
+| `references/send-preflight.md` | The fail-closed contract that runs before every send: live category check, short cache, never let a network error through |
 | `scripts/submit.py` | Runs the checker and, only if it passes, submits the definition to a WABA |
 | `scripts/status.py` | Reads the live status and category of a template by name |
-| `examples/skeleton-followup.json` | A complete definition in the submit format that passes the checker |
+| `scripts/preflight.py` | Fail-closed check before a send: exits 0 only on live `APPROVED` + `UTILITY`; `--all` scans the whole WABA for reclassifications |
+| `examples/skeleton-return.json`, `examples/case-progress.json`, `examples/appointment-reminder.json`, `examples/media-notice.json` | Complete definitions in the submit format that pass the checker (the last one is an image-header notice, allowed since the September 15 revision when the body is clean and the button acknowledges) |
 
 ## Install
 
@@ -88,8 +93,9 @@ The scripts need Python 3.8 or newer and nothing outside the standard library.
 Check a definition before it goes anywhere near Meta:
 
 ```bash
-python3 scripts/check.py examples/skeleton-followup.json
+python3 scripts/check.py examples/skeleton-return.json
 python3 scripts/check.py --corpus
+python3 scripts/check_gallery.py
 ```
 
 Submit and track, with the token and the WABA id taken from the environment (never from a file, never printed):
@@ -97,11 +103,18 @@ Submit and track, with the token and the WABA id taken from the environment (nev
 ```bash
 export META_TOKEN=...   # system user access token with whatsapp_business_management
 export META_WABA=...    # numeric WABA id
-python3 scripts/submit.py examples/skeleton-followup.json
-python3 scripts/status.py utility_followup_v1
+python3 scripts/submit.py examples/skeleton-return.json
+python3 scripts/status.py utility_case_followup_v1
 ```
 
 The definition format is the one `submit.py` expects: name, language, category, body, footer, slots, protocol-style examples for every slot, and the two buttons. `SKILL.md` section 5 documents every field.
+
+Before sending anything through an approved template, run the fail-closed preflight (`references/send-preflight.md` covers the full contract):
+
+```bash
+python3 scripts/preflight.py utility_case_followup_v1
+python3 scripts/preflight.py --all   # daily cron: who got reclassified since the last scan
+```
 
 ## The two layers
 
