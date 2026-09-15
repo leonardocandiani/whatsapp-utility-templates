@@ -6,13 +6,13 @@
   "components": [
     {
       "type": "BODY",
-      "text": "Oi, {{1}}, tudo bem? {{2}} aqui, da nossa equipe, sobre o seu atendimento em aberto. {{3}}? Pode responder por aqui.",
+      "text": "Oi, {{1}}. Sobre a sua solicitação {{2}}, preciso confirmar uma coisa: {{3}}? Pode responder por aqui.",
       "example": {
         "body_text": [
           [
             "Morgan",
-            "Jamie",
-            "Você confirma o endereço informado na solicitação de atendimento 61840"
+            "61840",
+            "o endereço que está no cadastro da solicitação continua o mesmo"
           ]
         ]
       }
