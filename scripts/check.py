@@ -62,8 +62,8 @@ REENGAGEMENT_WORDS = {
 # already has ("Yes, ..."), acknowledges ("Got it"), or declines ("Not now")
 # holds it in UTILITY.
 BAD_BUTTON_WORDS = {
-    "pt": [r"quero", r"\bver\b", r"saber", r"conhecer", r"continuar", r"ligar", r"mandar", r"mais"],
-    "en": [r"\bwant\b", r"\bsee\b", r"\bknow\b", r"\blearn\b", r"\bcontinue\b", r"\bcall\b", r"\bsend\b", r"\bmore\b"],
+    "pt": [r"quero", r"\bver\b", r"saber", r"conhecer", r"continuar", r"ligar", r"mandar", r"mais", r"consultor"],
+    "en": [r"\bwant\b", r"\bsee\b", r"\bknow\b", r"\blearn\b", r"\bcontinue\b", r"\bcall\b", r"\bsend\b", r"\bmore\b", r"\badvisor\b"],
 }
 
 # The free slot's example needs to read like a service-desk note, not a sales
@@ -87,6 +87,23 @@ def _find(patterns, text):
     return None
 
 
+def _check_header(components: list) -> list:
+    """Text headers never pass. Image or video fall through to the wording
+    and button checks below: the header is not what decides it, the body
+    and the button label do (measured in the September 15, 2026 gallery:
+    same body, one approval with "Notify me", five reclassified with
+    "Want to know more" / "Talk to an advisor")."""
+    header = next((c for c in components if c.get("type", "").upper() == "HEADER"), None)
+    if not header:
+        return []
+    header_format = str(header.get("format") or "TEXT").upper()
+    if header_format == "TEXT":
+        return ["text header does not belong in the utility pattern"]
+    if header_format not in ("IMAGE", "VIDEO"):
+        return [f"{header_format} header is not supported (only image or video, with an acknowledgement button)"]
+    return []
+
+
 def _check_contract(definition: dict, components: list, text: str) -> list:
     """Meta/house contract fields that have nothing to do with wording."""
     reasons = []
@@ -96,8 +113,7 @@ def _check_contract(definition: dict, components: list, text: str) -> list:
         reasons.append("allow_category_change must be false")
     if not NAME_PATTERN.match(definition.get("name", "")):
         reasons.append("name must be lowercase snake_case starting with a letter")
-    if any(c.get("type", "").upper() == "HEADER" for c in components):
-        reasons.append("header does not belong in the utility pattern")
+    reasons.extend(_check_header(components))
     if EMOJI.search(text):
         reasons.append("emoji in the body")
     return reasons
