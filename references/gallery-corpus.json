@@ -1,0 +1,3212 @@
+[
+ {
+  "name": "utility_billing_reminder_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Adesão aguardando confirmação"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}.\n\n*Your membership for plate {{2}} is still waiting on confirmation in the system.*\n\nMembership amount: *$ {{3}}* via bank transfer.\n\nExpires on {{4}}.\n\nWant to confirm activation?",
+    "example": {
+     "body_text": [
+      [
+       "Jordan Avery",
+       "ABC1D23",
+       "4,235.00",
+       "04/30/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Let's activate"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "One more day"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Talk to support"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_pending_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Your case with us has an open item: {{2}}. {{3}} Reply here to resolve it.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "confirming details",
+       "It is quick, one minute fixes it."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Sort it now"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Later"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_payment_status_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. About the payment for plate {{2}}: {{3}} If you need a duplicate, reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Morgan",
+       "GHI7J89",
+       "the transfer generated on 07/15/2026 is still valid and activation completes once it clears."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Send duplicate"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Already paid"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_proposal_update_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Update on your proposal for plate {{2}}: {{3}} Any questions, reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "DEF4G56",
+       "it is still on hold in the system under the same terms I showed you."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "See proposal"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_notice_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Update on your case ticket: {{2}} Any questions, just reply.",
+    "example": {
+     "body_text": [
+      [
+       "Morgan",
+       "ticket #3390, opened on 07/13/2026, was updated in the system and is waiting on your confirmation."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "See details"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, thanks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_question_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! There is something pending here: {{2}} Reply here to sort it out.",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "one field on your record for ticket #5711 needs confirming to close out the step logged on 07/14/2026."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Sort it now"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Later"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_followup_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! About your case: {{2}} Just reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "we received the confirmation of your details on ticket #8214, logged on 07/15/2026, and the next step is already unlocked."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Continue"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_media_notice_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "IMAGE",
+    "example": {
+     "header_handle": [
+      "https://scontent.whatsapp.net/v/t61.29466-34/718674469_1522079626124260_6714599243764423522_n.png?ccb=1-7&_nc_sid=8b1bef&_nc_ohc=ounSFZ-DDC0Q7kNvwH8S8Db&_nc_oc=AdrMLubCnTA42Xe5W_P07Czzm0y6tEHSfiEqKSYxM_MM5VR_g6sfUK9yUa_os5wSZII&_nc_zt=3&_nc_ht=scontent.whatsapp.net&edm=AH51TzQEAAAA&_nc_gid=MKH-e5D7BliWAkaANSPEug&_nc_tpa=Q5bMBQI1GpUhwSuTemZxHaiTzOBHvp29auRb6acMyj56fCr26p_2tyYAi1etClOwxcpHYr-i5JMzbvMZUw&oh=01_Q5Aa5gFDDzsf07R1Li3FdmmFHqi7Qo9iFMEQdzLjl9Lkfytp4A&oe=6AD0C3B5"
+     ]
+    }
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Important notice!\n\nWe are letting you know that {{2}}\n\n{{3}}\n\nTo {{4}}, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Morgan",
+       "we received the payment confirmation for ticket #1355, made on 07/12/2025",
+       "The digital receipt is now available to review and confirm delivery.",
+       "access digital receipt #1355 and confirm delivery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Notify me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_minimal_prompt_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hey {{1}}. To continue, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Casey, we received the payment confirmation for ticket #7164427, made on 19/02/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Learn more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_minimal_prompt_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi there, {{1}}. To continue, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Casey, we received the payment confirmation for ticket #7164427, made on 25/06/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Learn more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_minimal_prompt_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. To continue, pick an option below.",
+    "example": {
+     "body_text": [
+      [
+       "Casey, we received the payment confirmation for ticket #7164427, made on 25/06/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Learn more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_minimal_prompt_v4",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hey, {{1}}. To continue, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Casey, we received the payment confirmation for ticket #7164427, made on 12/02/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Learn more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_minimal_case_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. {{2}}. Reply here and I will explain further.",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "we received the payment confirmation for ticket #1199, made on 12/10/2025"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "utility_minimal_case_v1_en",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. {{2}}. Reply here and I will explain further.",
+    "example": {
+     "body_text": [
+      [
+       "Alex",
+       "we received the payment confirmation for ticket #7164427, made on 12/10/2025"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "utility_quote_details_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. As requested, here is the quote data for vehicle {{2}}:\n\nMonthly payment: {{3}}\nAnnual total: {{4}}\nDown payment: {{5}}\nFull details: {{6}}\n\nThe down payment covers:\n\n{{7}}\n\nIf you need to review anything, reply to this message.",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Scania",
+       "125",
+       "1,250",
+       "100",
+       "details",
+       "coverage items"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Talk now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_quote_details_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. As requested, here is the quote data for vehicle {{2}}:\n\nMonthly payment: {{3}}\nAnnual total: {{4}}\nDown payment: {{5}}\nQuote details: {{6}}\n\nThe down payment covers:\n\n{{7}}\n\nIf you need to review anything, reply to this message.",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Scania",
+       "125.20",
+       "12,250.00",
+       "64",
+       "details",
+       "coverage items"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Talk now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_notice_plain_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Notice: {{1}}\n\n{{2}}\n\nTo continue, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Casey, we received the payment confirmation for ticket #7164427, made on 12/02/2026",
+       "Ticket ID: 324ffs"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Notify me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_media_notice_v6",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "VIDEO",
+    "example": {
+     "header_handle": [
+      "https://scontent.whatsapp.net/v/t61.29466-34/637221389_979354967834481_1126507549209021882_n.mp4?ccb=1-7&_nc_sid=8b1bef&_nc_ohc=B4lscMuZzs0Q7kNvwGG6lw4&_nc_oc=AdqVnjMdwja6ftR50Nuks2BtbJA_e-gYKiOG5X1yVsaanhnx8FamSHAkIl4yOYqkLr8&_nc_zt=28&_nc_ht=scontent.whatsapp.net&edm=AH51TzQEAAAA&_nc_gid=MKH-e5D7BliWAkaANSPEug&_nc_tpa=Q5bMBQJbqvU6udBzMiY3XyZFUUE6l29gdDnKHs8GKLmEsAARWizs4Zf2ZtFvszcAJ90bc13x3zRoJVcTiA&oh=01_Q5Aa5gGzK920ltWtEHnt-P3CwUWZt5lG0ai_pOHjHWySw1qduA&oe=6AD0D5C4"
+     ]
+    }
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Important notice!\n\nWe are letting you know that {{2}}\n\n{{3}}\n\nTo {{4}}, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Morgan",
+       "we received the payment confirmation for ticket #1355, made on 07/12/2025",
+       "The digital receipt is now available to review and confirm delivery.",
+       "access digital receipt #1355 and confirm delivery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "URL",
+      "text": "Tap here",
+      "url": "https://example.com/case"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Talk to an advisor"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_media_notice_v5",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "VIDEO",
+    "example": {
+     "header_handle": [
+      "https://scontent.whatsapp.net/v/t61.29466-34/534425006_980442107712494_1133194709497243985_n.mp4?ccb=1-7&_nc_sid=8b1bef&_nc_ohc=cCLI63BPLIkQ7kNvwGYveEg&_nc_oc=AdrXsGY5qsOwPGmyo7EnlUUbjb-PFZU9CnBNSgs7_mG_NTOL6vHzfZjwRIh1RwrVAZM&_nc_zt=28&_nc_ht=scontent.whatsapp.net&edm=AH51TzQEAAAA&_nc_gid=MKH-e5D7BliWAkaANSPEug&_nc_tpa=Q5bMBQLDzyuNYqQviBFIwL61-BVFRey5WmEgonX9P_FYYgYLeGVdkQG0sjg_oJRebmfirCE9w1eYQ2c-jQ&oh=01_Q5Aa5gGS9nFy5iRTRkZEYPfEFj9q4zGx-aBH6wRm8OhdKapW_w&oe=6AD0DDD8"
+     ]
+    }
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Important notice!\n\nWe are letting you know that {{2}}\n\n{{3}}\n\nTo {{4}}, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "we received the payment confirmation for ticket #44221, made on 12/12/2025",
+       "The digital receipt is now available to review and confirm delivery.",
+       "access digital receipt #44221 and confirm delivery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "URL",
+      "text": "Tap here",
+      "url": "https://example.com/case"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Want to know more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block contact"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_media_notice_v4",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "VIDEO",
+    "example": {
+     "header_handle": [
+      "https://scontent.whatsapp.net/v/t61.29466-34/694911491_1984560922194562_7472280075657644265_n.mp4?ccb=1-7&_nc_sid=8b1bef&_nc_ohc=UFsWxmBss-YQ7kNvwHAMGYI&_nc_oc=Adp8_75vwpeKwgS0hKVKkTlXPIKqnW1VyBI2tw5l7U1rLpx3ZSs5v-x16n_5ZS-Dihg&_nc_zt=28&_nc_ht=scontent.whatsapp.net&edm=AH51TzQEAAAA&_nc_gid=MKH-e5D7BliWAkaANSPEug&_nc_tpa=Q5bMBQI4emzPIDaOINUyxk6VPcW3Id5JtYB-oirIcBFzzcp0nKef6gnaLx-0ut7Xx-9KwGww7HH1KNgqiw&oh=01_Q5Aa5gE3hprQnawFFJEmTG0V9NYGJf6X46aC7EWjxIRI29gBpw&oe=6AD0A8BE"
+     ]
+    }
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Important notice!\n\nWe are letting you know that {{2}}\n\n{{3}}\n\nTo {{4}}, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "we received the payment confirmation for ticket #9903, made on 12/12/2025",
+       "The digital receipt is now available to review and confirm delivery.",
+       "access digital receipt #67881 and confirm delivery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Want to know more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not interested"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_media_notice_v3",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "VIDEO",
+    "example": {
+     "header_handle": [
+      "https://scontent.whatsapp.net/v/t61.29466-34/653960360_2192991511503238_6042141057102335057_n.mp4?ccb=1-7&_nc_sid=8b1bef&_nc_ohc=Nxuc5r1rzhMQ7kNvwErZ642&_nc_oc=Adq5wloQvlklnoF9Ltg6ALpRTr4vLtV1W8BEZ8rl1dm3qssyaAJKQ16gkhEuOgyfFfY&_nc_zt=28&_nc_ht=scontent.whatsapp.net&edm=AH51TzQEAAAA&_nc_gid=MKH-e5D7BliWAkaANSPEug&_nc_tpa=Q5bMBQIL8id7FvU1OGKzuz3qabxRQ_SF5H6Tz41aAY-XgHZnShMHfUDiYlCte4zaDjvXT7Ge_hNqQuTbrw&oh=01_Q5Aa5gFt2w_5iGSMzaXut7xNBRgD__epBMl3v0wpVafGKvGqEA&oe=6AD0C616"
+     ]
+    }
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Important notice!\n\nWe are letting you know that {{2}}\n\n{{3}}\n\nTo {{4}}, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "we received the payment confirmation for ticket #22233, made on 07/12/2025",
+       "The digital receipt is now available to review and confirm delivery.",
+       "access digital receipt #2233 and confirm delivery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Want to know more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not interested"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_media_notice_v2",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Important notice!\n\nWe are letting you know that {{2}}\n\n{{3}}\n\nTo {{4}}, tap the button below.",
+    "example": {
+     "body_text": [
+      [
+       "Alex",
+       "we received the payment confirmation for ticket #64284, made on 07/12/2025",
+       "The digital receipt is now available to review and confirm delivery.",
+       "access digital receipt #67881 and confirm delivery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Want to know more"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not interested"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "marketing_social_proof_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! How is it going?\n\nThis is Jamie, from RoadShield.\n\nThe start of the year is usually the best time to sort out costs and avoid vehicle surprises, especially for people who rely on it every day.\n\nToday, over 42,000 members have already chosen RoadShield for a simple, affordable protection plan built for people who live on the road.\n\nCan I walk you through how it works in a couple minutes and see if it makes sense for you right now?",
+    "example": {
+     "body_text": [
+      [
+       "Name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "marketing_social_proof_v2",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! How is it going?\nThis is Jamie, from RoadShield.\n\nStart of year is a great time to sort out costs and review your vehicle's protection. Today, over 42,000 members have already chosen RoadShield for a simple protection plan built for people who live on the road.\n\nCan I walk you through how it works in a couple minutes and see if it makes sense for you now?",
+    "example": {
+     "body_text": [
+      [
+       "{{1}}name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "marketing_seasonal_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! Jamie, from RoadShield, here.\nRiding the Black Friday wave, we have special vehicle protection deals for truck drivers.\n\nAre you interested in learning more?",
+    "example": {
+     "body_text": [
+      [
+       "name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "utility_appointment_reminder",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Reminder: our advisor will call you on {{1}} at {{2}} to go over your truck's details. Please be available.",
+    "example": {
+     "body_text": [
+      [
+       "2025-12-31",
+       "10:00 AM"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "utility_call_confirmed_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Encomenda entregue"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}},\n\nGreat news! Your call with the RoadShield advisor is confirmed for today at {{2}}.",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "5 PM"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "URL",
+      "text": "See order",
+      "url": "https://example.com/case"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_call_permission_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Would you like to receive a call from one of our representatives?"
+   },
+   {
+    "type": "CALL_PERMISSION_REQUEST"
+   }
+  ]
+ },
+ {
+  "name": "marketing_followup_nudge_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}!\nJamie here again.\nJust checking if you got a chance to see my earlier message.\n\nIf you want, we can put together a personalized simulation for you, and then you will see our price is one of the best in the market. Just let me know here if you are interested!!",
+    "example": {
+     "body_text": [
+      [
+       "name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "marketing_price_pitch_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}!! How is it going?\nThis is Jamie from RoadShield.\n\nI am reaching out because over 42,000 truck drivers have already chosen RoadShield, protection with no red tape and guaranteed payout.\n\nOur price is among the best in the market!\n\nDo you already have coverage today?",
+    "example": {
+     "body_text": [
+      [
+       "name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "marketing_referral_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! Quick note here.\nAt RoadShield, over 58% of new members come in through a referral from other drivers. That only happens when the service actually works, right?\n\nWe have spent over 15 years on the road protecting what keeps your family going: your truck.\nIf you want, I can walk you through how it works. Just give me a shout!",
+    "example": {
+     "body_text": [
+      [
+       "name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "marketing_scarcity_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! 🚨\nI am finishing up enrollment today, and only a few spots are left with RoadShield's special terms.\n\nThis month alone, several drivers were able to protect their trucks at an affordable price with a real guaranteed payout.\n\nIf you want out of the risk, message me now, this window might close.\nCan I help you out?",
+    "example": {
+     "body_text": [
+      [
+       "name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "marketing_cold_open_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}!! How is it going?\nThis is Jamie from RoadShield, real protection for people who live on the road.\n\nI am reaching out because over 42,000 truck drivers have already chosen RoadShield, protection with no red tape and guaranteed payout.\n\nDoes it make sense to learn more about how this could help you?",
+    "example": {
+     "body_text": [
+      [
+       "name"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "utility_case_open_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Consulta em aberto"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}.\n\n*Your truck protection request is still open in the system.*\n\nTo continue, just send the plate number.\n\nYour spot is still held.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan Avery"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Send the plate"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Ask a question"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Talk to a human"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_conversation_reopen_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Conversa em aberto"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}.\n\nYour conversation with us is still open in the support queue.\n\nWant to pick up where we left off?",
+    "example": {
+     "body_text": [
+      [
+       "Jordan"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "Reply STOP to leave the list."
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Let's continue"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Later"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Close it out"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev10",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "I'm reaching out about confirming case ticket #29718.",
+       "confirms the ticket was forwarded"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev9",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "I'm reaching out about confirming case ticket #86403.",
+       "needs to clear the pending item"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev8",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "I'm reaching out about confirming case ticket #35274.",
+       "confirms the record update"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev7",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "I'm reaching out about confirming case ticket #48156.",
+       "needs to check the pending ticket"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev6",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "I'm reaching out about confirming case ticket #73920.",
+       "confirms receiving the notice"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev5",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "I'm reaching out about confirming case ticket #62815.",
+       "needs to confirm the appointment"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev4",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "I'm reaching out about confirming case ticket #91347.",
+       "confirms the record is now in order"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "I'm reaching out about confirming case ticket #54219.",
+       "needs to validate their account details"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_rev2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "I'm reaching out about confirming case ticket #83421.",
+       "confirms the case ticket"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Riley",
+       "I'm reaching out about confirming case ticket #721661.",
+       "confirm your appointment record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev10",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "I'm reaching out about confirming case ticket #52906. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev9",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "I'm reaching out about confirming case ticket #13748. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev8",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "I'm reaching out about confirming case ticket #86329. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev7",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "I'm reaching out about confirming case ticket #74512. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev6",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "I'm reaching out about confirming case ticket #35687. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev5",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "I'm reaching out about confirming case ticket #92164. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev4",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "I'm reaching out about confirming case ticket #58731. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "I'm reaching out about confirming case ticket #41295. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_rev2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "I'm reaching out about confirming case ticket #67843. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "I'm reaching out about confirming case ticket #23102. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev10",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Taylor Ribeiro",
+       "needs to confirm the intake ticket for the case handled on 02/06/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev9",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "Riley Cardoso",
+       "needs to confirm the intake ticket for the case handled on 17/05/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev8",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Sam",
+       "Avery Kim",
+       "needs to confirm the intake ticket for the case handled on 25/07/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev7",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Drew Dias",
+       "needs to confirm the intake ticket for the case handled on 09/04/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev6",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Taylor Barros",
+       "needs to confirm the intake ticket for the case handled on 11/06/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev5",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "Morgan Reese",
+       "needs to confirm the intake ticket for the case handled on 28/05/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev4",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Sam Nunes",
+       "needs to confirm the intake ticket for the case handled on 03/07/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "Quinn Almeida",
+       "needs to confirm the intake ticket for the case handled on 15/04/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_rev2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Jamie Rivera",
+       "needs to confirm the intake ticket for the case handled on 22/06/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "Jamie Rivera",
+       "needs to confirm the intake ticket for the case handled on 18/05/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_proposal_pending_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Proposta em aberto"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}.\n\nYour proposal for plate {{2}} is still waiting for a reply in the system until {{3}}.\n\nAfter that date the spot goes back to the queue.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "ABC1D23",
+       "Jun 30"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Let me check"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "One more day"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Close it out"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_confirm_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Confirmação de atendimento"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}.\n\nYour case, logged at {{2}}, was recorded in the system.\n\nTo continue the open ticket, confirm below.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "2 PM"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Confirm"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Later"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Close it out"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "noise_test_connection_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello {{1}}! This is a real test of the official ZapMentor connection with Meta. If this message arrived, the integration is validated.",
+    "example": {
+     "body_text": [
+      [
+       "Reese"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v3_latest",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? Jamie here. {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "I'm reaching out about confirming case ticket #721661.",
+       "confirm your appointment record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v2_latest",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? Jamie here. {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "I'm reaching out about confirming case ticket #23102. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_checkin_v1_latest",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}. Do you still {{3}}?",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "Jamie Rivera",
+       "needs to confirm the intake ticket for the case handled on 18/05/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Still driving it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_progress_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. The record for plate {{2}} is still open here in the system. {{3}} Reply here to close out your case.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "ABC1D23",
+       "Ticket #8214, logged on 07/15/2026, is waiting on your confirmation to move forward."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Continue"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_notice_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. Update on your case ticket: {{2}}",
+    "example": {
+     "body_text": [
+      [
+       "Morgan",
+       "ticket #3390, opened on 07/13/2026, was updated in the system and is waiting on your confirmation."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "See details"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, thanks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_document_reminder_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "HEADER",
+    "format": "TEXT",
+    "text": "Documento pendente"
+   },
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}.\n\nYour membership for plate {{2}} is waiting on a document: {{3}}.\n\nSend it here on WhatsApp to unlock the next step.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "ABC1D23",
+       "updated vehicle registration"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "I'll send it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Ask a question"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Talk to support"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_question_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! There is something pending here: {{2}}",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "one field on your record for ticket #5711 needs confirming to close out the step logged on 07/14/2026."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Sort it now"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Later"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_followup_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! About your case: {{2}}",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "we received the confirmation of your details on ticket #8214, logged on 07/15/2026, and the next step is already unlocked."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Continue"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "noise_out_of_scope_v4",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! It is just that the terms {{2}}",
+    "example": {
+     "body_text": [
+      [
+       "we received the payment confirmation for ticket #11902, made on 12/10/2025",
+       "on your case ticket is still pending."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's mine"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, thanks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "noise_out_of_scope_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! Tell me the model {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "we received the payment confirmation for ticket #12215, made on 12/10/2025",
+       "about your request, to confirm the ticket ID for identification."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "See the amount"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, thanks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "noise_out_of_scope_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}? If it has {{2}}, no credit check needed.",
+    "example": {
+     "body_text": [
+      [
+       "Casey, we received the payment confirmation for ticket #4443, made on 12/10/2025",
+       "I have your record on file with the related ID, happy to help"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Want to see it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, thanks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "noise_out_of_scope_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}! Should I work out the numbers for {{2}}?",
+    "example": {
+     "body_text": [
+      [
+       "we received the payment confirmation for ticket #4443, made on 12/10/2025",
+       "confirming your attendance"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Work out the numbers"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, thanks"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_reopen_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Do you still need that callback?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #58731, which sat pending on our side on 08/09/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I need it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not needed"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_notice_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Any questions, just reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "Jamie Rivera",
+       "I'm reaching out about an update to case ticket #721661, logged on 03/09/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Got it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "I have a question"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_ask_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? {{2}} here, from RoadShield, about your open case. {{3}}? Feel free to reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Jamie",
+       "I'm reaching out about confirming case ticket #23102. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Sim"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Não"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_confirm_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? {{2}} here, from RoadShield, about your open case. {{3}}. Do you still {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Riley",
+       "Jamie",
+       "I'm reaching out about confirming case ticket #721661.",
+       "confirm your appointment record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I confirm"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "No, cancel"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_check_v3",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Do you still {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #18345 opened on 02/09/2026",
+       "confirm the callback on this ticket"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, go ahead"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not needed"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_reopen_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Do you still need that callback?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #58731, which sat pending on our side on 08/09/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I need it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_ask_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? This is {{2}}, from RoadShield, about your open case. {{3}}? Feel free to reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Jamie",
+       "I'm reaching out about confirming case ticket #23102. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I confirm"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_confirm_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? {{2}} here, from RoadShield, about your open case. {{3}}. Can you confirm {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Riley",
+       "Jamie",
+       "I'm reaching out about confirming case ticket #721661.",
+       "their appointment record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I confirm"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_check_v2",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? This is {{2}}, from RoadShield, about your case. {{3}}. Do you still {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #18345 opened on 02/09/2026",
+       "confirm the callback on this ticket"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, go ahead"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_reengagement_attempt_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Can we continue this conversation here?",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #58731, which sat pending on our side on 08/09/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "We can"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_ask_v2b",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? This is {{2}}, from RoadShield, about your open case. {{3}}? Feel free to reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #86403. Can you confirm the appointment on file"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I confirm"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_confirm_v2b",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? {{2}} here, from RoadShield, about your open case. {{3}}. Can you confirm {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "Jamie",
+       "I'm reaching out about case ticket #23102 logged on 04/09/2026",
+       "the details on this record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I confirm"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_notice_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Any questions, just reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "Jamie Rivera",
+       "I'm reaching out about an update to case ticket #721661, logged on 03/09/2026"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Got it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_check_v2b",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? This is {{2}}, from RoadShield, about your case. {{3}}. Do you still {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #30217 opened on 05/09/2026",
+       "needs to confirm the details on this ticket"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, go ahead"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_ask_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}, how is it going? {{2}} here, from RoadShield, about your open case. {{3}}? Feel free to reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Jamie",
+       "I'm reaching out about confirming case ticket #23102. Can you confirm your record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, that's me"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_confirm_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? {{2}} here, from RoadShield, about your open case. {{3}}. Do you still {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Riley",
+       "Jamie",
+       "I'm reaching out about confirming case ticket #721661.",
+       "confirm your appointment record"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, I do"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_status_check_v1",
+  "veredito": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}, how is it going? My name is {{2}}, from RoadShield. {{3}}. Do you still {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "Jamie Rivera",
+       "I'm reaching out about case ticket #18345 opened on 02/09/2026",
+       "confirm the callback on this ticket"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "FOOTER",
+    "text": "RoadShield"
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Yes, go ahead"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Block this number"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_callback_offer_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. This is {{2}}, an advisor with RoadShield.\n\nAbout your truck's quote, can I call you {{3}} to close out the details?",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie",
+       "this afternoon"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Go ahead and call"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "I'd rather text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_quote_ready_batch_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. This is {{2}}, from RoadShield.\n\nYou asked for a quote for your truck and it sat pending on our side. It is ready now.\n\nReply here and I will send it over.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Send it over"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_case_followup_v2",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hi, {{1}}. {{2}}, from RoadShield, here.\n\nAbout your case: {{3}}\n\nJust reply here.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie",
+       "your quote is ready and I can walk you through it in two minutes."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Continue"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_quote_ready_v1",
+  "veredito": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Hello, {{1}}. This is {{2}}, an advisor with RoadShield.\n\nThe quote you asked for on {{3}} is ready. {{4}}\n\nReply here and I will send you the details.",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie",
+       "your 2019 Volvo FH",
+       "It came in within what you and I discussed."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     {
+      "type": "QUICK_REPLY",
+      "text": "Want to see it"
+     },
+     {
+      "type": "QUICK_REPLY",
+      "text": "Not now"
+     }
+    ]
+   }
+  ]
+ }
+]
