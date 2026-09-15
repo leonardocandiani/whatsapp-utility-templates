@@ -1,0 +1,34 @@
+{
+  "name": "whatsapp-utility-templates",
+  "desc": "Get WhatsApp templates approved as UTILITY by Meta, and keep them there",
+  "lang": "en",
+  "palette": "candiani",
+  "author": "candiani",
+  "license": "MIT",
+  "typing": [
+    "WhatsApp templates approved as UTILITY, and kept there",
+    "Checker calibrated on 16 real verdicts, 16 of 16 reproduced",
+    "Skeleton for Meta, sentence for the reader: two layers",
+    "Python stdlib only, works as a Claude Code skill"
+  ],
+  "tagline": "Write, check, submit and track WhatsApp Cloud API templates that Meta approves as UTILITY.",
+  "badges": [
+    "license",
+    "claude",
+    { "label": "python", "msg": "3.8+ stdlib only", "logo": "python" },
+    { "label": "corpus", "msg": "16 of 16 verdicts", "color": "ACCENT" },
+    "prs"
+  ],
+  "pitch": "**whatsapp-utility-templates** is the difference between a template that opens conversations for months and one that Meta silently moves to MARKETING 25 minutes after approving it: an anchor test, a five part anatomy, a checker that rejects what tends to fall, and a button pair whose click actually lands somewhere.",
+  "notice": "Not affiliated with or endorsed by Meta or Anthropic. \"WhatsApp\" is a Meta trademark; \"Claude\" and \"Claude Code\" are Anthropic trademarks.",
+  "what": {
+    "product": "Claude Code skill plus scripts for WhatsApp Cloud API message templates in the UTILITY category",
+    "anchor": "a template talks about a request the reader already has; anything that invites them to start something is MARKETING",
+    "anatomy": "name and speaker · anchor line · one wide slot with a protocol-style example · closing question · two quick replies",
+    "checker": "scripts/check.py rejects body, examples and button labels that tend to fall; --corpus replays 16 measured verdicts",
+    "buttons": "one accept, one decline, both answering the skeleton's question; payload by index so the webhook can route the click",
+    "after": "one template per WABA · fail-closed preflight reads the live category before every send",
+    "install": "git clone into ~/.claude/skills · Python 3.8+, stdlib only",
+    "license": "MIT"
+  }
+}

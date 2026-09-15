@@ -1,0 +1,33 @@
+{
+  "name": "utility_case_followup_v1",
+  "language": "pt_BR",
+  "category": "UTILITY",
+  "allow_category_change": false,
+  "components": [
+    {
+      "type": "BODY",
+      "text": "Olá, {{1}}, tudo bem? Aqui é {{2}}, da nossa equipe, sobre o seu atendimento em aberto. {{3}}. Você ainda {{4}}?",
+      "example": {
+        "body_text": [
+          [
+            "Jordan",
+            "Jamie",
+            "Estou entrando em contato referente ao protocolo de atendimento 40219 aberto em 02/09/2026",
+            "precisa concluir esse chamado"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "FOOTER",
+      "text": "Suporte"
+    },
+    {
+      "type": "BUTTONS",
+      "buttons": [
+        { "type": "QUICK_REPLY", "text": "Sim, preciso" },
+        { "type": "QUICK_REPLY", "text": "Não preciso" }
+      ]
+    }
+  ]
+}

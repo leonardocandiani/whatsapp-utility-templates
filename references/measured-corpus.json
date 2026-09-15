@@ -1,0 +1,436 @@
+[
+ {
+  "name": "utility_followup_v1",
+  "verdict": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}, tudo bem? Meu nome é {{2}}, da RoadShield. {{3}}. Podemos continuar esse atendimento por aqui?",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie Rivera",
+       "Estou entrando em contato referente ao protocolo de atendimento 40219 que ficou pendente do nosso lado em 08/09/2026"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Podemos" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_followup_v2",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}, tudo bem? Meu nome é {{2}}, da RoadShield. {{3}}. Você ainda precisa desse retorno?",
+    "example": {
+     "body_text": [
+      [
+       "Jordan",
+       "Jamie Rivera",
+       "Estou entrando em contato referente ao protocolo de atendimento 40219 que ficou pendente do nosso lado em 08/09/2026"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, preciso" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_question_v1",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}, tudo bem? {{2}} aqui, da RoadShield, sobre o seu atendimento em aberto. {{3}}? Pode responder por aqui.",
+    "example": {
+     "body_text": [
+      [
+       "Casey",
+       "Jamie",
+       "Estou entrando em contato referente à confirmação do protocolo de atendimento 55021. Você confirma seu cadastro"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, sou eu" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_question_v2",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}, tudo bem? {{2}} aqui, da RoadShield, sobre o seu atendimento em aberto. {{3}}? Pode responder por aqui.",
+    "example": {
+     "body_text": [
+      [
+       "Morgan",
+       "Jamie Rivera",
+       "Estou entrando em contato referente ao protocolo de atendimento 61840. Você confirma o agendamento registrado"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, confirmo" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_question_v3",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}, tudo bem? Aqui é {{2}}, da RoadShield, sobre o seu atendimento em aberto. {{3}}? Pode responder por aqui.",
+    "example": {
+     "body_text": [
+      [
+       "Taylor",
+       "Jamie",
+       "Estou entrando em contato referente à confirmação do protocolo de atendimento 55021. Você confirma seu cadastro"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, confirmo" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_confirmation_v1",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}, tudo bem? {{2}} aqui, da RoadShield, sobre o seu atendimento em aberto. {{3}}. Você ainda {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Riley",
+       "Jamie",
+       "Estou entrando em contato referente à confirmação do protocolo de atendimento 72910",
+       "confirma seu cadastro de agendamento"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, estou" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_confirmation_v2",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}, tudo bem? {{2}} aqui, da RoadShield, sobre o seu atendimento em aberto. {{3}}. Você confirma {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Drew",
+       "Jamie",
+       "Estou entrando em contato referente ao protocolo de atendimento 23108 registrado em 04/09/2026",
+       "os dados desse cadastro"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, confirmo" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_confirmation_v3",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}, tudo bem? {{2}} aqui, da RoadShield, sobre o seu atendimento em aberto. {{3}}. Você confirma {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Quinn",
+       "Jamie",
+       "Estou entrando em contato referente à confirmação do protocolo de atendimento 72910",
+       "seu cadastro de agendamento"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, confirmo" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_notice_v1",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}, tudo bem? Meu nome é {{2}}, da RoadShield. {{3}}. Qualquer dúvida, é só responder por aqui.",
+    "example": {
+     "body_text": [
+      [
+       "Blake",
+       "Jamie Rivera",
+       "Estou entrando em contato referente à atualização do protocolo de atendimento 72910, registrado em 03/09/2026"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Entendi" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_return_v1",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}, tudo bem? Meu nome é {{2}}, da RoadShield. {{3}}. Você ainda {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Avery",
+       "Jamie Rivera",
+       "Estou entrando em contato referente ao protocolo de atendimento 40219 aberto em 02/09/2026",
+       "confirma o retorno sobre esse protocolo"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, pode seguir" },
+     { "type": "QUICK_REPLY", "text": "Bloquear número" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_return_v2",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}, tudo bem? Aqui é {{2}}, da RoadShield, sobre o seu atendimento. {{3}}. Você ainda {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Parker",
+       "Jamie Rivera",
+       "Estou entrando em contato referente ao protocolo de atendimento 30217 aberto em 05/09/2026",
+       "precisa confirmar os dados desse protocolo"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, pode seguir" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "utility_return_v3",
+  "verdict": "UTILITY",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}, tudo bem? Aqui é {{2}}, da RoadShield, sobre o seu atendimento. {{3}}. Você ainda {{4}}?",
+    "example": {
+     "body_text": [
+      [
+       "Reese",
+       "Jamie Rivera",
+       "Estou entrando em contato referente ao protocolo de atendimento 40219 aberto em 02/09/2026",
+       "confirma o retorno sobre esse protocolo"
+      ]
+     ]
+    }
+   },
+   { "type": "FOOTER", "text": "RoadShield" },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Sim, pode seguir" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "marketing_call_offer_v1",
+  "verdict": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}. Aqui é {{2}}, consultora da RoadShield.\n\nSobre a cotação do seu caminhão, posso te ligar {{3}} para fechar os detalhes?",
+    "example": {
+     "body_text": [
+      [
+       "Skyler",
+       "a Jamie",
+       "hoje à tarde"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Pode ligar" },
+     { "type": "QUICK_REPLY", "text": "Prefiro por aqui" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "marketing_batch_followup_v1",
+  "verdict": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}. Aqui é {{2}}, da RoadShield.\n\nVocê pediu uma cotação para o seu caminhão e ela ficou pendente do nosso lado. Já está pronta.\n\nResponda por aqui que eu te passo.",
+    "example": {
+     "body_text": [
+      [
+       "Rowan",
+       "a Jamie"
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Pode mandar" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "marketing_followup_pitch_v1",
+  "verdict": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Oi, {{1}}. {{2}}, da RoadShield, por aqui.\n\nSobre o seu atendimento: {{3}}\n\nÉ só responder por aqui.",
+    "example": {
+     "body_text": [
+      [
+       "Phoenix",
+       "Jamie",
+       "sua cotação saiu e eu consigo te explicar em dois minutos."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Continuar" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "marketing_quote_ready_v1",
+  "verdict": "MARKETING",
+  "components": [
+   {
+    "type": "BODY",
+    "text": "Olá, {{1}}. Aqui é {{2}}, consultora da RoadShield.\n\nA cotação que você pediu para {{3}} ficou pronta. {{4}}\n\nResponda por aqui que eu te passo os detalhes.",
+    "example": {
+     "body_text": [
+      [
+       "Sage",
+       "a Jamie",
+       "o seu Volvo FH 2019",
+       "Ficou dentro do que você comentou comigo."
+      ]
+     ]
+    }
+   },
+   {
+    "type": "BUTTONS",
+    "buttons": [
+     { "type": "QUICK_REPLY", "text": "Quero ver" },
+     { "type": "QUICK_REPLY", "text": "Agora não" }
+    ]
+   }
+  ]
+ }
+]
